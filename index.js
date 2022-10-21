@@ -1,26 +1,32 @@
 let ratingOptions = document.querySelectorAll('.rating')
-let userRating
+let userRating;
+let pageBody = document.querySelector('body');
 
+
+// pageBody.addEventListener("click", () => {
+//     console.log('123');
+// })
+
+// ratingOptions.addEventListener('click', ()=>{
+//     console.log('option clicked');
+// })
 console.log(ratingOptions);
 
-// for (let i = 0; i< ratingOptions.length;i++) {
-//     document.addEventListener('onclick',(i) => {
+
+// for (rating in ratingOptions) {
+//     rating.addEventListener("click", () => {
 //         console.log('Hello');
-//     } )
+//     })
 // }
+
+ratingOptions.forEach(element => {
+    element.addEventListener('click', () => {
+        console.log('123');
+    })
+});
 
 // for (const rating in ratingOptions) {
 //     rating.onClick = () => {
 //         console.log('hello')
 //     }
 // }
-function clickHandler() {
-    console.log('Hiiii');
-}
-
-let pageBody = document.getElementsByTagName('body')[0]
-console.log(pageBody);
-
-pageBody.onClick = () => {
-    console.log('123');
-}
