@@ -14,9 +14,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Yinkajay/Interactive-rating-component]https://github.com/Yinkajay/Interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://yinkajay.github.io/Interactive-rating-component/](https://yinkajay.github.io/Interactive-rating-component/)
 
-## My process
 
 ### Built with
 
@@ -25,14 +24,9 @@ Users should be able to:
 - Flexbox
 - JS DOM manipulation
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Manipulating the DOM with vanilla JS
-
-
-
 
 ## Author
 
