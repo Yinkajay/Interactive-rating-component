@@ -1,32 +1,34 @@
-let ratingOptions = document.querySelectorAll('.rating')
-let userRating;
-let pageBody = document.querySelector('body');
+const ratingOptions = document.querySelectorAll('.rating')
+const pageBody = document.querySelector('body');
+const submitBtn = document.getElementById('submit-btn')
+const beforeSubmission = document.querySelector('.pre-sub')
+const afterSubmission = document.querySelector('.post-sub')
+let answer = ''
 
 
-// pageBody.addEventListener("click", () => {
-//     console.log('123');
-// })
-
-// ratingOptions.addEventListener('click', ()=>{
-//     console.log('option clicked');
-// })
 console.log(ratingOptions);
 
 
-// for (rating in ratingOptions) {
-//     rating.addEventListener("click", () => {
-//         console.log('Hello');
-//     })
-// }
-
 ratingOptions.forEach(element => {
     element.addEventListener('click', () => {
-        console.log('123');
+        element.classList.toggle('clicked')
+        answer = element.innerHTML
+        console.log(answer);
     })
 });
 
-// for (const rating in ratingOptions) {
-//     rating.onClick = () => {
-//         console.log('hello')
-//     }
-// }
+submitBtn.onclick = (event) => {
+    event.preventDefault()
+    console.log('value submitted');
+    toggleContent(1)
+}
+
+function toggleContent() {
+    if(answer.trim() === ''){
+        beforeSubmission.style.display = 'block'
+        afterSubmission.style.display = 'none'
+    }else{
+        beforeSubmission.style.display = 'none'
+        afterSubmission.style.display = 'block'
+    }
+}

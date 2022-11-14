@@ -43,12 +43,6 @@ main {
     background-color: var(--dark-blue);
 }
 
-.text-section {
-    /* position: relative; */
-    /* background-color: yellow; */
-    /* height: 60%; */
-}
-
 .star {
     background-color: hsla(217, 12%, 63%, 0.1);
     border-radius: 25px;
@@ -63,18 +57,26 @@ h1 {
     font-size: 26px;
     padding: 30px 0 20px;
 }
-.feedback-p{
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    font-size: 14px; 
+}
+
+.feedback-p {
     color: var(--light-grey);
 }
 
-.rating-section{
-    /* background-color: blueviolet; */
+.rating-section {
     height: 40%;
 }
+
 .rating-form {
     display: flex;
     justify-content: space-between;
-    /* background-color: green; */
     margin: 20px 0;
 }
 
@@ -101,7 +103,7 @@ h1 {
     color: white;
     background-color: var(--orange);
 } */
-.clicked{
+.clicked {
     color: white;
     background-color: var(--orange);
 }
@@ -123,16 +125,41 @@ h1 {
     transition: 0.4s;
     color: var(--orange);
     background-color: white;
-    cursor: pointer;t
+    cursor: pointer;
 }
 
+.pre-sub {
+    /* display: none; */
+}
 
+.post-sub {
+    display: none;
+    text-align: center;
+}
+
+.post-sub img {
+    margin: 20px 0;
+}
+
+.selected-score {
+    color: var(--orange);
+    background-color: hsla(217, 12%, 63%, 0.1);
+    width: fit-content;
+    margin: 10px auto;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.outro-p {
+    color: var(--light-grey);
+    margin: 0 12px;
+}
 
 
 /* Footer */
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 .attribution {
